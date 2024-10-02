@@ -53,8 +53,11 @@ export default function Cover() {
         <h1 className="text-5xl font-bold text-white">Bem-vindo ao Meu Portfólio</h1>
         <p className="mt-4 text-lg text-gray-300">Explore meus projetos e criações.</p>
       </div>
-   
+    
+
     </section>
+
+  
 
     
   );
