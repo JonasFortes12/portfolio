@@ -36,7 +36,7 @@ export default function Cover() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
     
 
       {/* Gradiente animado no fundo */}
