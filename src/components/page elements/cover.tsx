@@ -36,11 +36,12 @@ export default function Cover() {
   }, []);
 
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-zinc-900">
+    <section className="relative h-screen overflow-hidden">
     
 
       {/* Gradiente animado no fundo */}
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,#18181b,#000000)] animate-gradient"></div>
+      <div className="absolute inset-0 animate-gradient">
+      </div>
 
       {/* Objeto fluido 1 */}
       <div className="absolute object1 w-[40rem] h-[40rem] bg-yellow-400 rounded-full opacity-60 blur-[50px] top-1/4 left-1/4"></div>
@@ -53,6 +54,8 @@ export default function Cover() {
         <h1 className="text-5xl font-bold text-white">Bem-vindo ao Meu Portfólio</h1>
         <p className="mt-4 text-lg text-gray-300">Explore meus projetos e criações.</p>
       </div>
+
+      
     
 
     </section>
