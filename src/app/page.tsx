@@ -4,6 +4,21 @@ import Cover from "@/components/page elements/cover";
 import Aboutme from "@/components/page elements/aboutme";
 import { useEffect } from "react";
 
+import { HardSkillsInfiniteMarquee } from "@/components/page elements/hard-skills-infinite-marquee";
+
+const skills = [
+  { name: 'React', logo: '/logo-skills/react-logo.webp' },
+  { name: 'Next.js', logo: '/logo-skills/react-logo.webp' },
+  { name: 'Tailwind CSS', logo: '/logo-skills/react-logo.webp' },
+  { name: 'TypeScript', logo: '/logo-skills/react-logo.webp' },
+  { name: 'React', logo: '/logo-skills/react-logo.webp' },
+  { name: 'Next.js', logo: '/logo-skills/react-logo.webp' },
+  { name: 'Tailwind CSS', logo: '/logo-skills/react-logo.webp' },
+  { name: 'TypeScript', logo: '/logo-skills/react-logo.webp' },
+  
+  // Adicione mais habilidades conforme necessário
+]
+
 export default function Home() {
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
@@ -37,12 +52,13 @@ export default function Home() {
   return (
     <div className="main-container">
 
-      <div id="cover" className="section h-screen w-full flex justify-center items-center0">
+      <div id="cover" className="section h-screen w-full flex justify-center items-center">
         <Cover />
       </div>
 
-      <div id="aboutme" className="section h-screen w-full flex justify-center items-center">
+      <div id="aboutme" className="section h-screen w-full flex-col justify-center items-center">
         <Aboutme />
+        <HardSkillsInfiniteMarquee skills={skills} />
       </div>
 
 

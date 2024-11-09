@@ -55,9 +55,19 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		keyframes: {
+		'loop-scroll': {
+			'0%': { transform: 'translateX(100%)' },
+			'100%': { transform: 'translateX(-100%)' },
+		},
+		},
+		animation: {
+		'loop-scroll': 'loop-scroll 20s linear infinite',
+		}
   	}
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
