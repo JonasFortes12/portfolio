@@ -7,30 +7,28 @@ export default function Cover() {
   
   useEffect(() => {
     // Animação dos objetos flutuantes
-    gsap.to(".object1", {
-      xPercent: 1,
-      yPercent: -50,
+    gsap.fromTo(".object1", {
+      xPercent: 0,
+      yPercent: -30,
+    }, {
+      xPercent: 50,
+      yPercent: -30,
       repeat: -1,
       yoyo: true,
       duration: 4,
       ease: "power3.inOut",
     });
 
-    gsap.to(".object2", {
-      xPercent: -1,
-      yPercent: 50,
+    gsap.fromTo(".object2", {
+      xPercent: 0,
+      yPercent: 20,
+    }, {
+      xPercent: -50,
+      yPercent: 20,
       repeat: -1,
       yoyo: true,
       duration: 4,
       ease: "power3.inOut",
-    });
-
-    gsap.to(".object1, .object2", {
-      rotation: 360, // Rotaciona 360 graus
-      transformOrigin: "center center", // Define o ponto de origem da rotação
-      repeat: -1,
-      duration: 4,
-      ease: "linear", // Rotação contínua
     });
 
   }, []);
