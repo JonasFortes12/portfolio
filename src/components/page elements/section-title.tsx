@@ -26,15 +26,13 @@ export default function SectionTitle({ title }: SectionTitleProps) {
     return (
         <div className="title-container text-center py-10">
             <h2 className="relative inline-block text-4xl font-semibold pb-1">
-            {title}
+                <div className="mb-2">{title}</div>
                 {/*Linha animada */}
                 <div
                     ref={lineRef}
                     className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 rounded-md bg-gradient-to-r from-yellow-400 to-red-600"
                 ></div>
-            </h2>
-            
-            
+            </h2> 
         </div>
     );
 }
