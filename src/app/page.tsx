@@ -3,7 +3,6 @@
 import Cover from "@/components/page elements/cover";
 import Aboutme from "@/components/page elements/aboutme";
 import { useEffect } from "react";
-import SectionTitle from "@/components/page elements/section-title";
 import WhatIDo from "@/components/page elements/whatido";
 
 export default function Home() {
@@ -49,7 +48,6 @@ export default function Home() {
       </div>
 
       <div id="skills" className="section h-screen w-full flex-col justify-center items-center">
-        <SectionTitle title="O que eu faço ?" />
         <WhatIDo />
       </div>
 
