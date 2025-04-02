@@ -54,26 +54,25 @@ export default function Aboutme() {
       }
     );
 
-    // Iniciar o vídeo quando estiver visível
+    // play the video when it is in view and pause it when out of view
     if (videoRef.current) {
+      const videoElement = videoRef.current; // Copy ref to a local variable
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              videoRef.current?.play();
+              videoElement.play();
             } else {
-              videoRef.current?.pause();
+              videoElement.pause();
             }
           });
         },
         { threshold: 0.5 }
       );
-      observer.observe(videoRef.current);
+      observer.observe(videoElement);
 
       return () => {
-        if (videoRef.current) {
-          observer.unobserve(videoRef.current);
-        }
+        observer.unobserve(videoElement);
       };
     }
   }, []);

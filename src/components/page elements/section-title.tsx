@@ -24,7 +24,7 @@ export default function SectionTitle({ title }: SectionTitleProps) {
   }, []);
 
     return (
-        <div className="title-container text-center py-10">
+        <div className="title-container text-center pb-10">
             <h2 className="relative inline-block text-4xl font-semibold pb-1">
                 <div className="mb-2">{title}</div>
                 {/*Linha animada */}
