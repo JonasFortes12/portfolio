@@ -18,8 +18,9 @@ export default function WhatIDo() {
           >
             
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-sm text-slate-950/60 uppercase font-bold">Desenvolvimento de</p>
-              <h4 className="text-black font-medium text-2xl 
+              <p className="text-tiny text-white/70 uppercase font-bold">
+              Desenvolvimento de</p>
+              <h4 className="text-white font-medium text-xl 
               ">Sistemas eficientes para o seu negócio</h4>
             </CardHeader>
             <Image
@@ -29,11 +30,11 @@ export default function WhatIDo() {
               // filter brightness-50
               src="/images/back-end-card.png"
             />
-            <div className="absolute inset-0 bg-slate-300/80"></div>
+            <div className="absolute inset-0 bg-orange-700/60"></div>
             
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
-                <p className="text-black text-tiny">Arquitetura robusta para aplicações escaláveis.</p>
+                <p className="text-white text-tiny">Arquitetura robusta para aplicações escaláveis.</p>
               </div>
               <Button
                 className="text-tiny"
@@ -53,19 +54,21 @@ export default function WhatIDo() {
             className="w-full h-[250px] col-span-1"
           >
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-              <h4 className="text-black font-medium text-2xl">Acme camera</h4>
+              <p className="text-tiny text-white/70 uppercase font-bold">
+              Desenvolvimento de</p>
+              <h4 className="text-white font-medium text-xl 
+              ">Interfaces modernas e intuitivas.</h4>
             </CardHeader>
             <Image
               removeWrapper
               alt="Card example background"
               className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-              src="https://heroui.com/images/card-example-6.jpeg"
+              src="/images/front-end-card.jpg"
             />
+            <div className="absolute inset-0 bg-orange-700/60"></div>
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
-                <p className="text-black text-tiny">Available soon.</p>
-                <p className="text-black text-tiny">Get notified.</p>
+              <p className="text-white text-tiny">Sua marca com uma cara profissional online.</p>
               </div>
               <Button
                 className="text-tiny"
@@ -73,30 +76,33 @@ export default function WhatIDo() {
                 radius="full"
                 size="sm"
               >
-                Notify Me
+                Veja Mais
               </Button>
             </CardFooter>
           </Card>
           
-          {/* Criação e arquitetura de sistemas com IA */}
+
+          {/* Criação e Arquitetura de sistemas de IA */}
           <Card
             isFooterBlurred
             className="w-full h-[250px] col-span-1"
           >
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-              <h4 className="text-black font-medium text-2xl">Acme camera</h4>
+              <p className="text-tiny text-white/70 uppercase font-bold">
+              Criação e Arquitetura de</p>
+              <h4 className="text-white font-medium text-xl ">
+                IA´s aplicadas para resolver desafios reais</h4>
             </CardHeader>
             <Image
               removeWrapper
               alt="Card example background"
               className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-              src="https://heroui.com/images/card-example-6.jpeg"
+              src="/images/IA-card.jpg"
             />
+            <div className="absolute inset-0 bg-orange-700/60"></div>
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
-                <p className="text-black text-tiny">Available soon.</p>
-                <p className="text-black text-tiny">Get notified.</p>
+              <p className="text-white text-tiny">Inteligência artificial a favor do seu negócio.</p>
               </div>
               <Button
                 className="text-tiny"
@@ -104,30 +110,33 @@ export default function WhatIDo() {
                 radius="full"
                 size="sm"
               >
-                Notify Me
+                Veja Mais
               </Button>
             </CardFooter>
           </Card>
-          
-          {/* Criação de sistemas embarcados */}
-          <Card
+
+
+             {/* Sistemas Embarcados */}
+             <Card
             isFooterBlurred
             className="w-full h-[250px] col-span-1"
           >
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-              <h4 className="text-black font-medium text-2xl">Acme camera</h4>
+              <p className="text-tiny text-white/70 uppercase font-bold">
+              Implementação de</p>
+              <h4 className="text-white font-medium text-xl 
+              ">Robôs digitais que trabalham por você</h4>
             </CardHeader>
             <Image
               removeWrapper
               alt="Card example background"
               className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-              src="https://heroui.com/images/card-example-6.jpeg"
+              src="/images/rpa-card.jpg"
             />
+            <div className="absolute inset-0 bg-orange-700/60"></div>
             <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
               <div>
-                <p className="text-black text-tiny">Available soon.</p>
-                <p className="text-black text-tiny">Get notified.</p>
+              <p className="text-white text-tiny">Transforme tarefas manuais em fluxos inteligentes.</p>
               </div>
               <Button
                 className="text-tiny"
@@ -135,7 +144,7 @@ export default function WhatIDo() {
                 radius="full"
                 size="sm"
               >
-                Notify Me
+                Veja Mais
               </Button>
             </CardFooter>
           </Card>

@@ -45,7 +45,7 @@ export default function Cover() {
       <div className="absolute object1 w-[40rem] h-[40rem] bg-yellow-400 rounded-full opacity-60 blur-[50px] top-1/4 left-1/4"></div>
 
       {/* Objeto fluido 2 */}
-      <div className="absolute object2 w-[40rem] h-[40rem] bg-red-600 rounded-full opacity-60 blur-[50px] bottom-1/4 right-1/4"></div>
+      <div className="absolute object2 w-[40rem] h-[40rem] bg-red-400 rounded-full opacity-60 blur-[50px] bottom-1/4 right-1/4"></div>
 
       {/* Conteúdo central */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
