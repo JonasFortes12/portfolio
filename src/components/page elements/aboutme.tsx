@@ -78,7 +78,7 @@ export default function Aboutme() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <div className="flex flex-col lg:flex-row min-h-screen overflow-hidden">
       
       {/* Lado esquerdo: Foto e Texto */}
       <div className="lg:w-1/2 flex flex-col items-center justify-center p-4 space-y-8">
@@ -102,7 +102,7 @@ export default function Aboutme() {
 
       {/* Lado direito: Vídeo */}
       <div className="lg:w-1/2 flex items-center justify-center py-4">
-        <div className="about-me-video w-full h-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
+        <div className="about-me-video w-full h-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-md">
           <video
             ref={videoRef}
             className="w-full h-full object-cover"
