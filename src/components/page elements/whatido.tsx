@@ -48,7 +48,8 @@ export default function WhatIDo() {
               </p>
             </div>
             <Button
-              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4" 
+              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4
+              hidden" 
               color="primary"
               radius="full"
               size="sm"
@@ -85,7 +86,8 @@ export default function WhatIDo() {
               </p>
             </div>
             <Button
-              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4"
+              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4
+              hidden"
               color="primary"
               radius="full"
               size="sm"
@@ -119,7 +121,8 @@ export default function WhatIDo() {
               </p>
             </div>
             <Button
-              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4"
+              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4
+              hidden"
               color="primary"
               radius="full"
               size="sm"
@@ -129,7 +132,7 @@ export default function WhatIDo() {
           </CardFooter>
         </Card>
 
-        {/* Sistemas Embarcados */}
+        {/* RPA */}
         <Card isFooterBlurred className="w-full h-[250px] col-span-1">
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-white/70 uppercase font-bold">
@@ -156,7 +159,8 @@ export default function WhatIDo() {
               </p>
             </div>
             <Button
-              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4"
+              className="text-tiny px-4 lg:px-4 md:px-4 sm:px-4
+              hidden"
               color="primary"
               radius="full"
               size="sm"
