@@ -1,6 +1,6 @@
 // import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import SectionTitle from "@/components/page elements/section-title";
-import WorkCard from "@/components/page elements/work-card";
+import WhatIDoCard from "@/components/page elements/whatido-card";
 
 export default function WhatIDo() {
   return (
@@ -15,7 +15,7 @@ export default function WhatIDo() {
       "
       >
         {/* Desenvolvimento Back-end */}
-        <WorkCard
+        <WhatIDoCard
           firstTitle="Desenvolvimento de"
           secondTitle="Sistemas eficientes para o seu negócio"
           subtitle="Arquitetura robusta para aplicações escaláveis."
@@ -23,7 +23,7 @@ export default function WhatIDo() {
         />
 
         {/* Desenvolvimento Front-end */}
-        <WorkCard
+        <WhatIDoCard
           firstTitle="Desenvolvimento de"
           secondTitle="Interfaces modernas e intuitivas"
           subtitle=" Sua marca com uma cara profissional online."
@@ -31,7 +31,7 @@ export default function WhatIDo() {
         />
 
         {/* Criação e Arquitetura de sistemas de IA */}
-        <WorkCard
+        <WhatIDoCard
           firstTitle="Criação e Arquitetura de"
           secondTitle="IA´s aplicadas para resolver desafios reais"
           subtitle="Inteligência artificial a favor do seu negócio."
@@ -39,7 +39,7 @@ export default function WhatIDo() {
         />
 
         {/* RPA */}
-        <WorkCard
+        <WhatIDoCard
           firstTitle="Implementação de"
           secondTitle="Robôs digitais que trabalham por você"
           subtitle="Transforme tarefas manuais em fluxos inteligentes."
