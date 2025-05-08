@@ -19,7 +19,7 @@ export default function WhatIDo() {
           firstTitle="Desenvolvimento de"
           secondTitle="Sistemas eficientes para o seu negócio"
           subtitle="Arquitetura robusta para aplicações escaláveis."
-          imageSrc="/images/back-end-card.png"
+          imageSrc="/images/back-end-card.webp"
         />
 
         {/* Desenvolvimento Front-end */}
@@ -27,7 +27,7 @@ export default function WhatIDo() {
           firstTitle="Desenvolvimento de"
           secondTitle="Interfaces modernas e intuitivas"
           subtitle=" Sua marca com uma cara profissional online."
-          imageSrc="/images/front-end-card.jpg"
+          imageSrc="/images/front-end-card.webp"
         />
 
         {/* Criação e Arquitetura de sistemas de IA */}
@@ -35,7 +35,7 @@ export default function WhatIDo() {
           firstTitle="Criação e Arquitetura de"
           secondTitle="IA´s aplicadas para resolver desafios reais"
           subtitle="Inteligência artificial a favor do seu negócio."
-          imageSrc="/images/IA-card.jpg"
+          imageSrc="/images/IA-card.webp"
         />
 
         {/* RPA */}
@@ -43,7 +43,7 @@ export default function WhatIDo() {
           firstTitle="Implementação de"
           secondTitle="Robôs digitais que trabalham por você"
           subtitle="Transforme tarefas manuais em fluxos inteligentes."
-          imageSrc="/images/rpa-card.jpg"
+          imageSrc="/images/rpa-card.webp"
         />
       </div>
     </section>
