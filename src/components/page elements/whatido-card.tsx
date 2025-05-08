@@ -1,13 +1,13 @@
 import { Card, CardHeader, CardFooter, Image, Button } from "@heroui/react";
 
-interface WorksCardsProps {
+interface WhatIDoCardProps {
     firstTitle: string;
     secondTitle: string;
     subtitle: string;
     imageSrc: string;
 }
 
-export default function WorkCard(props: WorksCardsProps) {
+export default function WhatIDoCard(props: WhatIDoCardProps) {
 
     return (
 
