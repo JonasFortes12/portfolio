@@ -1,5 +1,4 @@
 import SectionTitle from "@/components/page elements/section-title";
-import { Card, CardHeader, CardBody, Image, Button } from "@heroui/react";
 import WorksCard from "@/components/page elements/works-card";
 
 export default function Works() {
@@ -49,6 +48,13 @@ export default function Works() {
           imageUrl="/images/mapa-sonoro.gif"
           link="https://mapa-sonoro-de-picos-git-main-sufato1287gmailcoms-projects.vercel.app/"
         />
+
+        <WorksCard
+          title="Landing page ELT GETEC PSI"
+          description="Landing page desenvolvida para a empresa ELT GETEC PSI,
+          especializada em manejo de tecnologia da informação"
+          imageUrl="/images/gtec-psi.gif"
+          link="https://elt-getec-psi-git-main-sufato1287-gmailcom.vercel.app/"/>
       </div>
     </section>
   );
