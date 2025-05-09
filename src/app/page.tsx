@@ -5,6 +5,7 @@ import Aboutme from "@/components/page elements/aboutme";
 // import { useEffect } from "react";
 import WhatIDo from "@/components/page elements/whatido";
 import Works from "@/components/page elements/works";
+import Contacts from "@/components/page elements/contacts";
 
 export default function Home() {
   
@@ -54,6 +55,10 @@ export default function Home() {
 
       <div id="works" className="section py-8 md:py-10 lg:py-12 w-full flex-col justify-center items-center">
         <Works />
+      </div>
+
+      <div id="contacts" className="section py-8 md:py-10 lg:py-12 w-full flex-col justify-center items-center">
+        <Contacts />
       </div>
 
 
