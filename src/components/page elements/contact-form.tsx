@@ -60,7 +60,7 @@ export default function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col space-y-8"
+          className="flex flex-col gap-y-4 py-4"
         >
           <FormField
             control={form.control}
@@ -96,8 +96,22 @@ export default function ContactForm() {
             )}
           />
 
-          <Button type="submit" className="w-2/5 h-auto self-end gap-2 flex flex-wrap">
-            <p>Enviar</p>  <FaWhatsapp className="!h-5 !w-5"/>
+          <Button
+            type="submit"
+            className="
+             h-auto w-2/5 self-end gap-2 flex flex-wrap
+            bg-[#128C7E]  // Verde oficial do WhatsApp
+            hover:bg-[#128C7E]
+            text-white
+            hover:shadow-[0_6px_20px_0_rgba(37,211,102,0.5)]  // Sombra esverdeada
+            hover:transform hover:-translate-y-0.5
+            items-center justify-center
+            py-2 px-4
+            rounded-lg
+            font-medium 
+          "
+          >
+            <FaWhatsapp className="!h-6 !w-6" /> <p>Enviar</p>
           </Button>
         </form>
       </Form>
