@@ -64,8 +64,9 @@ export default function SocialButton({
             text-white
             ${colorVariants[color].hoverText}
             ${colorVariants[color].shadow}
-            hover:transform hover:-translate-y-0.5 
-            transition-all duration-150
+            hover:transform hover:-translate-y-0.5
+            hover:scale-110
+            transition-all duration-200
             w-full
             h-full
             `}
