@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import HardSkillsInfiniteMarquee from './hard-skills-infinite-marquee'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -81,7 +82,8 @@ export default function Aboutme() {
     <div className="flex flex-col lg:flex-row min-h-screen overflow-hidden">
       
       {/* Lado esquerdo: Foto e Texto */}
-      <div className="lg:w-1/2 flex flex-col items-center justify-center p-4 space-y-8">
+      <div className="lg:w-1/2 flex flex-col items-center justify-center py-4 space-y-8">
+        
         <div className="about-me-image w-64 h-64 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/images/eu.jpeg"
@@ -98,11 +100,14 @@ export default function Aboutme() {
             Tudo que há sob o sol é temporário, mas o que é feito pelo amor dura para sempre.
           </p>
         </div>
+
+        <HardSkillsInfiniteMarquee/>
+
       </div>
 
       {/* Lado direito: Vídeo */}
       <div className="lg:w-1/2 flex items-center justify-center py-4">
-        <div className="about-me-video w-full h-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-md">
+        <div className="about-me-video w-full h-full aspect-video rounded-lg overflow-hidden shadow-md">
           <video
             ref={videoRef}
             className="w-full h-full object-cover"

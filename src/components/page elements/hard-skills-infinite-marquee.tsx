@@ -1,35 +1,46 @@
-'use client'
+'use client';
+import Marquee from "react-fast-marquee";
+import Image from 'next/image';
 
-import Image from 'next/image'
-import Marquee from 'react-fast-marquee'
+export default function HardSkillsInfiniteMarquee() {
+  const logos = [
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+  ];
 
-// Defina a interface para as habilidades
-interface Skill {
-  name: string
-  logo: string
-}
-
-// Componente principal
-export function HardSkillsInfiniteMarquee({ skills }: { skills: Skill[] }) {
   return (
-    <div className="w-full py-4 overflow-hidden bg-gray-400">
-      <Marquee gradient={false} speed={50}>
-        <div className="flex gap-8 md:gap-16 lg:gap-32 mx-16 items-center justify-center">
-          {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-16 h-16 relative">
-                <Image
-                  src={skill.logo}
-                  alt={`${skill.name} logo`}
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
-              <span className="mt-2 text-sm font-medium text-gray-600">{skill.name}</span>
-            </div>
-          ))}
-        </div>
+    <div className="flex flex-col">
+      <div className="flex h-auto w-full py-8">
+      <Marquee 
+        gradient={false} 
+        speed={50}
+        pauseOnHover={true}
+      >
+        {logos.map((logo, index) => (
+          <div key={index} className="mx-2 h-auto">
+            <Image 
+              src={logo}
+              alt="Company logo"
+              width={130}
+              height={60}
+              className="object-contain h-16 grayscale hover:grayscale-0 transition-all"
+            />
+          </div>
+        ))}
       </Marquee>
     </div>
-  )
+    </div>
+    
+  );
 }
