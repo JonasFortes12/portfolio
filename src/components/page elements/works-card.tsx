@@ -24,7 +24,8 @@ export default function WorksCard(props: WorksCardProps) {
               src={props.imageUrl}
             />
             <Button
-              className="text-tiny w-2/3"
+              className="text-tiny w-2/3
+              bg-gradient-to-r from-blue-500 to-violet-500"
               color="primary"
               radius="full"
               size="sm"

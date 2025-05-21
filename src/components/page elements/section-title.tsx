@@ -30,7 +30,7 @@ export default function SectionTitle({ title }: SectionTitleProps) {
                 {/*Linha animada */}
                 <div
                     ref={lineRef}
-                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 rounded-md bg-gradient-to-r from-yellow-400 to-red-600"
+                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 rounded-md bg-gradient-to-r from-blue-500 to-violet-500"
                 ></div>
             </h2> 
         </div>

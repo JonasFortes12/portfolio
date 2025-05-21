@@ -10,10 +10,10 @@ export default function Cover() {
     // Animação dos objetos flutuantes
     gsap.fromTo(".object1", {
       xPercent: 0,
-      yPercent: -30,
+      yPercent: -20,
     }, {
-      xPercent: 50,
-      yPercent: -30,
+      xPercent: 20,
+      yPercent: -20,
       repeat: -1,
       yoyo: true,
       duration: 4,
@@ -24,7 +24,7 @@ export default function Cover() {
       xPercent: 0,
       yPercent: 20,
     }, {
-      xPercent: -50,
+      xPercent: -20,
       yPercent: 20,
       repeat: -1,
       yoyo: true,
@@ -36,7 +36,7 @@ export default function Cover() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden
-     bg-orange-300/20 shadow-xl">
+     bg-[#FFFFFC] shadow-xl">
     
 
       {/* Gradiente animado no fundo */}
@@ -45,12 +45,12 @@ export default function Cover() {
 
       {/* Objeto fluido 1 */}
       <div className="absolute object1 
-      w-[40rem] h-[40rem] bg-yellow-400/80 opacity-80 
+      w-[40rem] h-[40rem] bg-blue-500 opacity-80 
       rounded-full blur-[50px] top-1/4 left-1/4"></div>
 
       {/* Objeto fluido 2 */}
       <div className="absolute object2 
-      w-[40rem] h-[40rem] bg-red-500/80 opacity-80 
+      w-[40rem] h-[40rem] bg-violet-500 opacity-80 
       rounded-full blur-[50px] bottom-1/4 right-1/4"></div>
 
       {/* Conteúdo central */}
