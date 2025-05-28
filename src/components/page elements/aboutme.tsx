@@ -86,18 +86,26 @@ export default function Aboutme() {
         
         <div className="about-me-image w-64 h-64 rounded-full overflow-hidden shadow-lg">
           <Image
-            src="/images/eu.jpeg"
+            src="/images/minha-foto.webp"
             alt="Minha foto"
             width={540}
             height={540}
-            className="object-cover"
+            className="object-cover translate-x-4 scale-[1.8] origin-center"
           />
         </div>
 
         <div className="about-me-text max-w-xl text-center">
           <h2 className="text-3xl font-bold mb-4">Olá! sou Jonas Fortes</h2>
           <p className="text-lg leading-relaxed">
-            Tudo que há sob o sol é temporário, mas o que é feito pelo amor dura para sempre.
+            Engenheiro da Computação pela UFC, vivo fascinado por 
+            tecnologia — do silício ao software mais avançado. 
+            Além do código, me encanta conectar inovação a negócios, 
+            criando soluções que geram valor real. 
+            Guiado pela fé em Deus e pela convicção de que a melhor tecnologia 
+            é aquela que melhora vidas. Foco em resultados, 
+            mas nunca sem propósito.
+
+            
           </p>
         </div>
 
@@ -116,11 +124,7 @@ export default function Aboutme() {
             playsInline
             aria-label="Vídeo de apresentação"
           >
-            <source src="/videos/presentation.mp4" type="video/mp4" />
-            {
-              /* <source src="/videos/seu-video.webm" type="video/webm" /> 
-              Converter vídeo para o formato WebM
-            */}
+            <source src="/videos/aboutmevideo.webm" type="video/webm" />
 
 
             Seu navegador não suporta o elemento de vídeo.

@@ -37,4 +37,4 @@ next-env.d.ts
 
 # Media
 public/videos/*
-public/images/*.gif
+!public/videos/aboutmevideo.webm
