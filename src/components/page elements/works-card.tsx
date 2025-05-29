@@ -1,9 +1,9 @@
-import { Card, CardHeader, CardBody, Image, Button } from "@heroui/react";
+import { Card, CardHeader, CardBody, Button } from "@heroui/react";
 
 interface WorksCardProps {
     title: string;
     description: string;
-    imageUrl: string;
+    videoUrl: string; // Alterado de imageUrl para videoUrl
     link: string;
 }
 
@@ -18,11 +18,18 @@ export default function WorksCard(props: WorksCardProps) {
             </small>
           </CardHeader>
           <CardBody className="overflow-visible py-2 flex-col items-center gap-3">
-            <Image
-              alt="Card background"
-              className="object-cover rounded-xl w-full"
-              src={props.imageUrl}
-            />
+            <div className="w-full rounded-xl overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover rounded-xl"
+              >
+                <source src={props.videoUrl} type="video/webm" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
             <Button
               className="text-tiny w-2/3
               bg-gradient-to-r from-blue-500 to-violet-500"
