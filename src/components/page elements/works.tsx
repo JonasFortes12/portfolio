@@ -53,7 +53,7 @@ export default function Works() {
           title="Landing page ELT GETEC PSI"
           description="Landing page desenvolvida para a empresa ELT GETEC PSI,
           especializada em manejo de tecnologia da informação"
-          videoUrl="/videos/eltgetc.webm"
+          videoUrl="/videos/eltgt.webm"
           link="https://elt-getec-psi-git-main-sufato1287-gmailcom.vercel.app/"/>
       </div>
     </section>
