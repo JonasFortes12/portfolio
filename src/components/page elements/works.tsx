@@ -18,7 +18,7 @@ export default function Works() {
           description="O projeto Mandacaru Broker API é 
           uma aplicação Spring Boot que visa simular o comportamento 
           de um Home Broker de Ações."
-          imageUrl="/images/mandacaru.gif"
+          videoUrl="/videos/broker.webm"
           link="https://www.linkedin.com/feed/update/urn:li:activity:7172356161499860992/"
         />
 
@@ -27,7 +27,7 @@ export default function Works() {
           description="O MEICash é um sistema de apoio à organização 
           financeira de Micro
             Empreendedores Individuais (MEIs)."
-          imageUrl="/images/meicash.gif"
+          videoUrl="/videos/meicash.webm"
           link="https://www.linkedin.com/feed/update/urn:li:activity:7209760252248944640/"
         />
 
@@ -36,7 +36,7 @@ export default function Works() {
           description=" Fruto de um profundo estudo em computação gráfica, 
             o projeto simula o sistema solar com planetas, 
             luas, cinturão de asteroides e navegação por câmera."
-          imageUrl="/images/gif-solar-system.gif"
+          videoUrl="/videos/solar.webm"
           link="https://github.com/JonasFortes12/Solar-System-Simulation"
         />
 
@@ -45,7 +45,7 @@ export default function Works() {
           description="Mapa sonoro interativo que explora a diversidade sonora de
               Picos-PI nos anos 90, permitindo ao usuário ouvir sons de
               diferentes locais da cidade."
-          imageUrl="/images/mapa-sonoro.gif"
+          videoUrl="/videos/mapa-sonoro.webm"
           link="https://mapa-sonoro-de-picos-git-main-sufato1287gmailcoms-projects.vercel.app/"
         />
 
@@ -53,7 +53,7 @@ export default function Works() {
           title="Landing page ELT GETEC PSI"
           description="Landing page desenvolvida para a empresa ELT GETEC PSI,
           especializada em manejo de tecnologia da informação"
-          imageUrl="/images/gtec-psi.gif"
+          videoUrl="/videos/eltgetc.webm"
           link="https://elt-getec-psi-git-main-sufato1287-gmailcom.vercel.app/"/>
       </div>
     </section>
