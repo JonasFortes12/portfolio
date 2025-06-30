@@ -8,7 +8,7 @@ export default function WhatIDo() {
       <SectionTitle title="O que eu faço ?" />
       <div
         className="grid 
-        grid-cols-1 gap-y-5 mx-4
+        grid-cols-1 gap-y-5 px-4
         lg:grid-cols-4 lg:gap-5 lg:px-12
         md:grid-cols-3 md:gap-5 md:px-8
         sm:grid-cols-2 sm:gap-5 sm:px-6 

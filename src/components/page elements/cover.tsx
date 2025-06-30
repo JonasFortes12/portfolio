@@ -58,11 +58,11 @@ export default function Cover() {
       justify-center h-full">
         
         <Typist startDelay={0} typingDelay={100} loop={false}>
-          <h1 className="text-5xl font-bold text-white">Dev_ Jonas Fortes</h1>
+          <h1 className="text-5xl font-bold text-white mx-4">Dev_ Jonas Fortes</h1>
         </Typist>
 
         <Typist startDelay={1700} typingDelay={70}  loop={false}>
-          <p className="mt-4 text-2xl text-white">
+          <p className="mt-4 text-2xl text-white mx-4">
           Desenvolvendo sistemas que conectam, aprendem e otimizam.
           </p>
         </Typist>
