@@ -94,7 +94,7 @@ export default function Aboutme() {
           />
         </div>
 
-        <div className="about-me-text max-w-xl text-center">
+        <div className="about-me-text max-w-xl text-center mx-4">
           <h2 className="text-3xl font-bold mb-4">Olá! sou Jonas Fortes</h2>
           <p className="text-lg leading-relaxed">
             Engenheiro da Computação pela UFC, vivo fascinado por 

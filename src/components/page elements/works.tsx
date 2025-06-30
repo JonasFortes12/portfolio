@@ -7,10 +7,11 @@ export default function Works() {
       <SectionTitle title="Projetos desenvolvidos" />
       <div
         className="grid
-        grid-cols-1 gap-y-4 px-0
+        grid-cols-1 gap-y-4 px-4
         lg:grid-cols-3 lg:gap-8 lg:px-12
         md:grid-cols-2 md:gap-6 md:px-6
         sm:grid-cols-1 sm:gap-y-5 sm:px-4
+        
         "
       >
         <WorksCard

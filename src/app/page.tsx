@@ -6,6 +6,7 @@ import Aboutme from "@/components/page elements/aboutme";
 import WhatIDo from "@/components/page elements/whatido";
 import Works from "@/components/page elements/works";
 import Contacts from "@/components/page elements/contacts";
+import Footer from "@/components/page elements/footer";
 
 export default function Home() {
   
@@ -60,6 +61,8 @@ export default function Home() {
       <div id="contacts" className="section py-8 md:py-10 lg:py-12 w-full flex-col justify-center items-center">
         <Contacts />
       </div>
+
+      <Footer />
 
 
     </div>
