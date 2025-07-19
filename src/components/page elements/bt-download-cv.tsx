@@ -1,23 +1,28 @@
 "use client";
 
 import { FileDown } from "lucide-react";
+import { Button } from "../ui/button";
 
 export default function DownloadButton() {
   return (
-    <a
-      href="/cv-jonasfortes.pdf"
-      download
-    >
-      <button
-        className="flex items-center
-        gap-2 bg-[#FFFFFC] text-black 
-        px-4 py-2 rounded hover:shadow-lg
-        hover:scale-105
-        transition-transform duration-300 ease-in-out"
+    <a href="/cv-jonasfortes.pdf" download>
+      <Button
+        variant={"outline"}
+        className="
+                  flex h-12
+                  bg-[#FFFFFC]
+                  hover:scale-105
+                  text-black
+                  hover:shadow-lg
+                  items-center justify-center
+                  gap-2
+                  rounded-lg
+                  font-medium
+                  text-md
+                "
       >
-        <FileDown className="w-6 h-6" />
-        Baixar Currículo
-      </button>
+        <FileDown className="!h-6 !w-6" /> <p>Baixar Currículo</p>
+      </Button>
     </a>
   );
 }

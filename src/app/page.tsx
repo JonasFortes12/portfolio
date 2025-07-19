@@ -7,11 +7,14 @@ import WhatIDo from "@/components/page elements/whatido";
 import Works from "@/components/page elements/works";
 import Contacts from "@/components/page elements/contacts";
 import Footer from "@/components/page elements/footer";
+import FloatingDownloadButton from "@/components/page elements/floating-download-cv-bt";
 
 export default function Home() {
 
   return (
     <div className="main-container">
+
+      <FloatingDownloadButton />
 
       <div id="cover" className="section h-screen w-full flex justify-center items-center">
         <Cover />
