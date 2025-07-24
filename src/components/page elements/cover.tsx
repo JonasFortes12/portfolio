@@ -70,7 +70,7 @@ export default function Cover() {
       {/* Conteúdo central */}
       <div
         className="relative z-10 flex flex-col
-        items-center justify-between min-h-full py-48"
+        items-center justify-between min-h-full py-48 md:py-56 lg:py-64 "
       >
         <div className="text-center">
           <Typist startDelay={0} typingDelay={100} loop={false}>
@@ -86,7 +86,7 @@ export default function Cover() {
           </Typist>
         </div>
 
-        <div>{animatedRendered && <DownloadButton />}</div>
+        <div className="mt-4">{animatedRendered && <DownloadButton />}</div>
       </div>
     </section>
   );
