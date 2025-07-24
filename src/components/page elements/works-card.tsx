@@ -34,7 +34,7 @@ export default function WorksCard(props: WorksCardProps) {
               className="text-tiny w-2/3
               bg-gradient-to-r from-blue-500 to-violet-500"
               color="primary"
-              radius="full"
+              radius="sm"
               size="sm"
               onPress={() =>
                 window.open(

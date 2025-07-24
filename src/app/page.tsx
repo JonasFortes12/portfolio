@@ -7,40 +7,14 @@ import WhatIDo from "@/components/page elements/whatido";
 import Works from "@/components/page elements/works";
 import Contacts from "@/components/page elements/contacts";
 import Footer from "@/components/page elements/footer";
+import FloatingDownloadButton from "@/components/page elements/floating-download-cv-bt";
 
 export default function Home() {
-  
-  // useEffect(() => {
-  //   const sections = document.querySelectorAll(".section");
-  //   let currentSectionIndex = 0;
-
-  //   function scrollToSection(index: number) {
-  //     window.scrollTo({
-  //       top: (sections[index] as HTMLElement).offsetTop,
-  //       behavior: "smooth", // Scroll suave
-  //     });
-  //   }
-
-  //   function handleScroll(event: { deltaY: number; }) {
-  //     const direction = event.deltaY > 0 ? 1 : -1; // Direção do scroll
-  //     currentSectionIndex = Math.min(
-  //       Math.max(0, currentSectionIndex + direction),
-  //       sections.length - 1
-  //     );
-  //     scrollToSection(currentSectionIndex);
-  //   }
-
-  //   // Adiciona o evento de scroll
-  //   window.addEventListener("wheel", handleScroll);
-
-  //   // Remove o evento ao desmontar o componente
-  //   return () => {
-  //     window.removeEventListener("wheel", handleScroll);
-  //   };
-  // }, []);
 
   return (
     <div className="main-container">
+
+      <FloatingDownloadButton />
 
       <div id="cover" className="section h-screen w-full flex justify-center items-center">
         <Cover />
