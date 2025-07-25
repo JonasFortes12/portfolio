@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardFooter, Image, Button } from "@heroui/react";
+import { Card, CardHeader, CardFooter, Button } from "@heroui/react";
+import Image from "next/image";
 
 interface WhatIDoCardProps {
   firstTitle: string;
@@ -29,11 +30,11 @@ export default function WhatIDoCard(props: WhatIDoCardProps) {
         </h4>
       </CardHeader>
       <Image
-        removeWrapper
-        alt="Card example background"
-        className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-        // filter brightness-50
         src={props.imageSrc}
+          alt="Card background"
+          fill
+          className="object-cover scale-125 -translate-y-6"
+          priority={true}
       />
       <div className="absolute inset-0 h-2/4 bg-gradient-to-b from-gray-500 to-transparent"></div>
 
