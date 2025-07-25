@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import HardSkillsInfiniteMarquee from './hard-skills-infinite-marquee'
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HardSkillsInfiniteMarquee from "./hard-skills-infinite-marquee";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Aboutme() {
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     // Animação GSAP para fazer os elementos surgirem de forma suave com ScrollTrigger
@@ -80,10 +80,8 @@ export default function Aboutme() {
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen overflow-hidden">
-      
       {/* Lado esquerdo: Foto e Texto */}
       <div className="lg:w-1/2 flex flex-col items-center justify-center py-4 space-y-8">
-        
         <div className="about-me-image w-64 h-64 rounded-full overflow-hidden shadow-lg">
           <Image
             src="/images/minha-foto.webp"
@@ -91,26 +89,23 @@ export default function Aboutme() {
             width={540}
             height={540}
             className="object-cover translate-x-4 scale-[1.8] origin-center"
+            priority={true}
           />
         </div>
 
         <div className="about-me-text max-w-xl text-center mx-4">
           <h2 className="text-3xl font-bold mb-4">Olá! sou Jonas Fortes</h2>
           <p className="text-lg leading-relaxed">
-            Engenheiro da Computação pela UFC, vivo fascinado por 
-            tecnologia — do silício ao software mais avançado. 
-            Além do código, me encanta conectar inovação a negócios, 
-            criando soluções que geram valor real. 
-            Guiado pela fé em Deus e pela convicção de que a melhor tecnologia 
-            é aquela que melhora vidas. Foco em resultados, 
-            mas nunca sem propósito.
-
-            
+            Engenheiro da Computação pela UFC, vivo fascinado por tecnologia —
+            do silício ao software mais avançado. Além do código, me encanta
+            conectar inovação a negócios, criando soluções que geram valor real.
+            Guiado pela fé em Deus e pela convicção de que a melhor tecnologia é
+            aquela que melhora vidas. Foco em resultados, mas nunca sem
+            propósito.
           </p>
         </div>
 
-        <HardSkillsInfiniteMarquee/>
-
+        <HardSkillsInfiniteMarquee />
       </div>
 
       {/* Lado direito: Vídeo */}
@@ -123,10 +118,9 @@ export default function Aboutme() {
             loop
             playsInline
             aria-label="Vídeo de apresentação"
+            preload="auto"
           >
             <source src="/videos/aboutmevideo.webm" type="video/webm" />
-
-
             Seu navegador não suporta o elemento de vídeo.
           </video>
         </div>
