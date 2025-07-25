@@ -10,7 +10,7 @@ interface WorksCardProps {
 export default function WorksCard(props: WorksCardProps) {
 
     return (
-        <Card className="py-4">
+        <Card className="py-2">
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <h4 className="font-bold text-large">{props.title}</h4>
             <small className="text-default-500 h-16">
@@ -31,7 +31,7 @@ export default function WorksCard(props: WorksCardProps) {
               </video>
             </div>
             <Button
-              className="text-tiny w-2/3
+              className="text-tiny w-full
               bg-gradient-to-r from-blue-500 to-violet-500"
               color="primary"
               radius="sm"
